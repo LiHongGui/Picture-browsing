@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="father001" translatesAutoresizingMaskIntoConstraints="NO" id="oJb-1e-4bD">
+                                <rect key="frame" x="20" y="55" width="728" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="K1n-9Q-h85"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsB-3H-hac">
+                                <rect key="frame" x="89" y="365" width="72" height="63"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="踢球"/>
+                                <connections>
+                                    <action selector="playAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDU-Xo-Miv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOC-f0-OoW">
+                                <rect key="frame" x="82" y="436" width="90" height="62"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="绿巨人"/>
+                                <connections>
+                                    <action selector="blueMan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJl-lh-Bmr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oJb-1e-4bD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="22j-oI-e4U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oJb-1e-4bD" secondAttribute="trailing" id="ZW3-xW-wC7"/>
+                            <constraint firstItem="oJb-1e-4bD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o9D-8f-0L7"/>
+                            <constraint firstItem="oJb-1e-4bD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="pzY-Iq-UXl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="imageView" destination="oJb-1e-4bD" id="dxS-QC-a4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="307"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="father001" width="560" height="245"/>
+    </resources>
+</document>
